@@ -97,7 +97,7 @@ def question8():
     answers["(c) P(X_1=1,X_2=1)"] = None
 
     # string: "dependent" or "independent"
-    answers["(c) Relationship between X_1 and X_2"] = "independent"
+    answers["(c) Relationship between X_1 and X_2"] = "dependent"
 
     # float
     answers["(d) P(A=1)"] = None
@@ -106,7 +106,7 @@ def question8():
     answers["(e) P(X_2=1|Class=+)"] = None
 
     # string: "yes" or "no"
-    answers["(e) A and B conditionally independent?"] = "no"
+    answers["(e) A and B conditionally independent?"] = "yes"
 
     # float
     answers["(d) Training error rate"] = None
@@ -118,12 +118,12 @@ def question9():
     answers = {}
 
     # int
-    answers["(a) K"] = None
-    answers["(b) K"] = None
+    answers["(a) K"] = 1
+    answers["(b) K"] = 5
 
     # explain_string
-    answers["(a) explain"] = None
-    answers["(b) explain"] = None
+    answers["(a) explain"] = "Our classes are very well separated from eachother. Therefore, we should classify a new data point with the cluster it is closest to."
+    answers["(b) explain"] = "Our classes are not very well separated but have high densities for the most part. Therefore, we should use a k value of 5 due to there only being a few instances of classes being amongst a high density of a competing class."
 
     return answers
 
