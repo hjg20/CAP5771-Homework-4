@@ -81,29 +81,29 @@ def question8():
 
 
     # float
-    answers["(a) P(X_1 = 1 | +)"] = None
-    answers["(a) P(X_1 = 1 | -)"] = None
-    answers["(a) P(X_2 = 1 | +)"] = None
-    answers["(a) P(X_2 = 1 | -)"] = None
-    answers["(a) P(X_3 = 1 | +)"] = None
-    answers["(a) P(X_3 = 1 | -)"] = None
+    answers["(a) P(X_1 = 1 | +)"] = 40/50
+    answers["(a) P(X_1 = 1 | -)"] = 25/50
+    answers["(a) P(X_2 = 1 | +)"] = 25/50
+    answers["(a) P(X_2 = 1 | -)"] = 16/50
+    answers["(a) P(X_3 = 1 | +)"] = 20/50
+    answers["(a) P(X_3 = 1 | -)"] = 8/50
 
     # string
     answers["(b) label"] = None
 
     # float
-    answers["(c) P(X_1=1)"] = None
-    answers["(c) P(X_2=1)"] = None
-    answers["(c) P(X_1=1,X_2=1)"] = None
+    answers["(c) P(X_1=1)"] = 65/100
+    answers["(c) P(X_2=1)"] = 41/100
+    answers["(c) P(X_1=1,X_2=1)"] = 28/100
 
     # string: "dependent" or "independent"
     answers["(c) Relationship between X_1 and X_2"] = "dependent"
 
     # float
-    answers["(d) P(A=1)"] = None
-    answers["(e) P(X_1=1, X_2=1|Class=+)"] = None
-    answers["(e) P(X_1=1|Class=+)"] = None
-    answers["(e) P(X_2=1|Class=+)"] = None
+    answers["(d) P(A=1)"] = 65/100
+    answers["(e) P(X_1=1, X_2=1|Class=+)"] = 20/50
+    answers["(e) P(X_1=1|Class=+)"] = 40/50
+    answers["(e) P(X_2=1|Class=+)"] = 25/50
 
     # string: "yes" or "no"
     answers["(e) A and B conditionally independent?"] = "yes"
@@ -131,16 +131,22 @@ def question9():
 def question10():
     answers = {}
 
+    A=5
+    B=4
+    C=5
+    pos=5
+    neg=5
+
     # float
-    answers["(a) P(A=1|+)"] = None
-    answers["(a) P(B=1|+)"] = None
-    answers["(a) P(C=1|+)"] = None
-    answers["(a) P(A=1|-)"] = None
-    answers["(a) P(B=1|-)"] = None
-    answers["(a) P(C=1|-)"] = None
+    answers["(a) P(A=1|+)"] = 3/5
+    answers["(a) P(B=1|+)"] = 2/5
+    answers["(a) P(C=1|+)"] = 4/5
+    answers["(a) P(A=1|-)"] = 2/5
+    answers["(a) P(B=1|-)"] = 2/5
+    answers["(a) P(C=1|-)"] = 1/5
 
     # type: explanatory string
-    answers["(a) P(A=1|+) explain your answer"] = None
+    answers["(a) P(A=1|+) explain your answer"] = "There are 5 instances that result in a positive class. Of those 5 instances, A=1 3 of those times. Therefore, P(A=1|+)=3/5."
   
     # type: float
     # note: R is the sample (A=1,B=1,C=1)
