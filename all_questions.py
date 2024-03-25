@@ -185,7 +185,7 @@ if __name__ == '__main__':
     answers_dict['question1'] = question1()
     answers_dict['question2'] = question2()
     answers_dict['question3'] = question3()
-    answers_dict['question4'] = question4()
+    #answers_dict['question4'] = question4()
     answers_dict['question7'] = question7()
     answers_dict['question8'] = question8()
     answers_dict['question9'] = question9()
