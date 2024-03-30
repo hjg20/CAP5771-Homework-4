@@ -79,37 +79,38 @@ def question7():
 def question8():
     answers = {}
 
-
     # float
-    answers["(a) P(X_1 = 1 | +)"] = 40/50
-    answers["(a) P(X_1 = 1 | -)"] = 25/50
-    answers["(a) P(X_2 = 1 | +)"] = 25/50
-    answers["(a) P(X_2 = 1 | -)"] = 16/50
-    answers["(a) P(X_3 = 1 | +)"] = 20/50
-    answers["(a) P(X_3 = 1 | -)"] = 8/50
-
-    # string
-    answers["(b) label"] = None
-
-    # float
-    answers["(c) P(X_1=1)"] = 65/100
-    answers["(c) P(X_2=1)"] = 41/100
-    answers["(c) P(X_1=1,X_2=1)"] = 28/100
+    answers["(a) P(X_1=1)"] = 65/100
+    answers["(a) P(X_2=1)"] = 41/100
+    answers["(a) P(X_1=1,X_2=1)"] = 28/100
 
     # string: "dependent" or "independent"
-    answers["(c) Relationship between X_1 and X_2"] = "dependent"
-
-    # float
-    answers["(d) P(A=1)"] = 65/100
-    answers["(e) P(X_1=1, X_2=1|Class=+)"] = 20/50
-    answers["(e) P(X_1=1|Class=+)"] = 40/50
-    answers["(e) P(X_2=1|Class=+)"] = 25/50
+    answers["(a) Relationship between X_1 and X_2"] = 'dependent'
 
     # string: "yes" or "no"
-    answers["(e) A and B conditionally independent?"] = "yes"
+    answers["(b) X_1 and X_2 conditionally independent given the class?"] = 'yes'
 
     # float
-    answers["(d) Training error rate"] = None
+    answers["(c) P(X_1=1 | +)"] = 40/50
+    answers["(c) P(X_1=1 | -)"] = 25/50
+    answers["(c) P(X_2=1 | +)"] = 25/50
+    answers["(c) P(X_2=1 | -)"] = 16/50
+    answers["(c) P(X_3=1 | +)"] = 20/50
+    answers["(c) P(X_3=1 | -)"] = 8/50
+
+    # For each row give the class predicted by the model after training using Naive Bayes
+
+    # here Row 1 corresponds to X_1 = 1, X_2 = 1 , X_3 = 1
+
+    #  Row 2 corresponds to X_1 = 1, X_2 = 0 , X_3 = 0 and similarly Row 3 and Row 4 as well
+    # String: either '+' or '-'
+    answers["(d) Row 1"] = '+'
+    answers["(d) Row 2"] = '+'
+    answers["(d) Row 3"] = '-'
+    answers["(d) Row 4"] = '-'
+
+    # float between 0 and 1
+    answers["(d) Training error rate"] = 0.35
 
     return answers
 
