@@ -23,25 +23,25 @@ def question1():
 
 
 # -----------------------------------------------------------
-def question2():
+# def question2():
 
-    ## I WAS TOLD TO SKIP THIS QUESTION ##
+#     ## I WAS TOLD TO SKIP THIS QUESTION ##
 
-    answers = {}
+#     answers = {}
 
-    # string "yes" or "no"
-    answers["(a)"] = None
-    answers["(b)"] = None
-    answers["(c)"] = None
-    answers["(d)"] = None
+#     # string "yes" or "no"
+#     answers["(a)"] = None
+#     answers["(b)"] = None
+#     answers["(c)"] = None
+#     answers["(d)"] = None
 
-    # explain_string: explanation in english prose
-    answers["(a) explain"] = None
-    answers["(b) explain"] = None
-    answers["(c) explain"] = None
-    answers["(d) explain"] = None
+#     # explain_string: explanation in english prose
+#     answers["(a) explain"] = None
+#     answers["(b) explain"] = None
+#     answers["(c) explain"] = None
+#     answers["(d) explain"] = None
 
-    return answers
+#     return answers
 # -----------------------------------------------------------
 def question3():
     answers = {}
@@ -151,42 +151,46 @@ def question10():
   
     # type: float
     # note: R is the sample (A=1,B=1,C=1)
-    answers["(b) P(+|R)"] = None  # WRONG
-    answers["(b) P(R|+)"] = None
-    answers["(b) P(R|-)"] = None
+    #(3/5)*(2/5)*(4/5)=.192
+    #(2/5)*(2/5)*(1/5)=.032
+    #(.192)*(.5)/(5/10)*(4/10)*(5/10) = .96
+    #(.032)*(.5)/(5/10)*(4/10)*(5/10) = .16
+    answers["(b) P(+|R)"] = .96  # WRONG
+    answers["(b) P(R|+)"] = .192
+    answers["(b) P(R|-)"] = .032
 
     # string, '+' or '-'
-    answers["(b) class label"] = None
+    answers["(b) class label"] = '+'
 
     # explain_string
-    answers["(b) Explain your reasoning"] = None
+    answers["(b) Explain your reasoning"] = 'The probability of the class being positive given R is higher than the probability of the class being -.'
   
     # float
-    answers["(c) P(A=1)"] = None
-    answers["(c) P(B=1)"] = None
-    answers["(c) P(A=1,B=1)"] = None
+    answers["(c) P(A=1)"] = 5/10
+    answers["(c) P(B=1)"] = 4/10
+    answers["(c) P(A=1,B=1)"] = 2/10
 
     # type: string, 'yes' or 'no'
-    answers["(c) A independent of B?"] = None
+    answers["(c) A independent of B?"] = 'yes'
   
     # type: float
-    answers["(d) P(A=1)"] = None
-    answers["(d) P(B=0)"] = None
-    answers["(d) P(A=1,B=0)"] = None
+    answers["(d) P(A=1)"] = 5/10
+    answers["(d) P(B=0)"] = 6/10
+    answers["(d) P(A=1,B=0)"] = 3/10
 
     # type: string: 'yes' or 'no'
-    answers["(d) A independent of B?"] = None
+    answers["(d) A independent of B?"] = 'yes'
   
     # type: float
-    answers["(e) P(A=1,B=1|+)"] = None
-    answers["(e) P(A=1|+)"] = None
-    answers["(e) P(B=1|+)"] = None
+    answers["(e) P(A=1,B=1|+)"] = 1/5
+    answers["(e) P(A=1|+)"] = 3/5
+    answers["(e) P(B=1|+)"] = 2/5
 
     # type: string: 'yes' or 'no'
-    answers["(e) A independent of B given class +?"] = None
+    answers["(e) A independent of B given class +?"] = 'no'
 
     # type: explanatory string
-    answers["(e) A and B conditionally independent given class +, explain"] =  None
+    answers["(e) A and B conditionally independent given class +, explain"] =  'P(A=1|+)*P(B=1|+) does not equal P(A=1,B=1|+). Therefore, they are not independent given class +.'
   
     return answers
 # --------------------------------------------------------
